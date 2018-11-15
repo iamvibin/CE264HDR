@@ -21,9 +21,12 @@ again run to verify the result of the code.
 The scripts name and their functionality are decribed below :
 1. RadiometryCalibration: 
    Plot the histogram of each R,G & B channels respectively  and regress the function to calculate g values.
-2. PlotHistograms:
-   This plots th histograms of  the pixel values of each of the channel for three different exposure times which is to be used for
-   the HDR generation
-3. HDR:
+2. HDR:
    This script generates HDR using two composite merge algorithms from the three images at different exposure intensities and finally
-   map it to generate fine tone-mapped image.
+   map it to generate fine tone-mapped image. The histograms are also plotted for the stack of three images used for HDR generation. 
+
+## Files 
+1. CE264HDR             : parent directory
+2. PictureStackedImages : Consist of three images used for generation of HDR image 
+3. CalibImages          : Consist of 14 images taken at different exposure time and is used for radiometry calibration 
+4. ToeMappedImages      : Final tonned mapped image are saved in this folder
